@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS card;
+
+CREATE TABLE card (
+	id SERIAL PRIMARY KEY,
+	first_number DOUBLE,
+	second_number DOUBLE,
+	operator TEXT,
+	answer DOUBLE,
+	is_deleted INT DEFAULT 0,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
